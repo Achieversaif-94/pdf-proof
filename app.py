@@ -7,6 +7,16 @@ from src.pipeline import PDFProofPipeline
 # --- Page Config ---
 st.set_page_config(page_title="PDF Proof", page_icon="🛡️", layout="wide")
 
+# --- Hide Streamlit Header (GitHub icon) ---
+hide_header = """
+<style>
+header[data-testid="stHeader"] {
+    display: none;
+}
+</style>
+"""
+st.markdown(hide_header, unsafe_allow_html=True)
+
 st.title("🛡️ PDF Proof — Hallucination-Resistant Q&A")
 st.markdown("Upload a PDF, ask a question, and get an answer with **page-level citations**. If the AI can't prove it, it won't say it.")
 
