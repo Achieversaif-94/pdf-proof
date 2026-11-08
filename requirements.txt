@@ -3,5 +3,5 @@ groq
 langchain-text-splitters
 sentence-transformers
 chromadb
-PyMuPDF
-tqdm
+pymupdf
+python-dotenv
